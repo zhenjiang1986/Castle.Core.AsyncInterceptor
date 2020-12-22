@@ -106,16 +106,16 @@ namespace Castle.DynamicProxy
     }
 
     ////[ShortRunJob]
-    public class CompletedTaskAsynchronousInterceptorBenchmarks : TaskBenchmarksBase
-    {
-        protected override Task ExecuteAsync(ITarget target) => target.CompletedTaskAsynchronous();
-    }
+    ////public class CompletedTaskAsynchronousInterceptorBenchmarks : TaskBenchmarksBase
+    ////{
+    ////    protected override Task ExecuteAsync(ITarget target) => target.CompletedTaskAsynchronous();
+    ////}
 
     ////[ShortRunJob]
-    public class CompletedResultTaskAsynchronousInterceptorBenchmarks : TaskBenchmarksBase
-    {
-        protected override Task ExecuteAsync(ITarget target) => target.CompletedResultTaskAsynchronous();
-    }
+    ////public class CompletedResultTaskAsynchronousInterceptorBenchmarks : TaskBenchmarksBase
+    ////{
+    ////    protected override Task ExecuteAsync(ITarget target) => target.CompletedResultTaskAsynchronous();
+    ////}
 
     ////[ShortRunJob]
     public class IncompleteTaskAsynchronousInterceptorBenchmarks : TaskBenchmarksBase
