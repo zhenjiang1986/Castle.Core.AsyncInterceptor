@@ -6,6 +6,7 @@ namespace Castle.DynamicProxy
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using BenchmarkDotNet.Configs;
     using BenchmarkDotNet.Reports;
     using BenchmarkDotNet.Running;
 
@@ -13,7 +14,9 @@ namespace Castle.DynamicProxy
     {
         public static void Main()
         {
-            Summary summary = BenchmarkRunner.Run<InterceptorBenchmarks>();
+            Summary[] summaries = BenchmarkRunner.Run(typeof(Program).Assembly);
+            ////Summary summary =
+            ////    BenchmarkRunner.Run<IncompleteResultTaskAsynchronousInterceptorBenchmarks>();
         }
     }
 }
